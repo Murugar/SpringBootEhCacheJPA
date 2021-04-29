@@ -20,7 +20,7 @@ public class Loader {
     @PostConstruct
     public void load() {
         List<Users> usersList = getList();
-        usersRepository.save(usersList);
+        usersRepository.saveAll(usersList);
     }
 
     private List<Users> getList() {
